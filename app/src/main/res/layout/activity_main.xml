@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mage1"
+            android:contentDescription="sehir_resmi" />
+
+        <ImageButton
+            android:id="@+id/btnGeri"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|start"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="geri_butonu" />
+
+        <ImageButton
+            android:id="@+id/btnIleri"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|end"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_next"
+            android:contentDescription="ileri_butonu" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSehirIsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sehir_ismi"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/plaka_no"
+            android:textSize="28sp"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/tvOzet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSehirIsim"
+            android:layout_marginTop="16dp"
+            android:text="@string/ozet_bilgi"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>
